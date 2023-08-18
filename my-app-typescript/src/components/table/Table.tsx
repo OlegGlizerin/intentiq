@@ -440,7 +440,7 @@ export default function EnhancedTable() {
                     <TableCell align="right">{row.avgFrequency}</TableCell>
                     <TableCell align="right">{row.avgTimeConversion}</TableCell>
                     {!isItemHovered && <TableCell align="right">{row.director}</TableCell>}
-                    {!isItemHovered && <TableCell style={{ position: 'relative' }} align="right">
+                    {isItemHovered && <TableCell style={{ position: 'relative' }} align="right">
                       <div style={{
                         position: 'absolute',
                         top: '13px',
